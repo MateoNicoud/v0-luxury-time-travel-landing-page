@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-}
+const repo = "v0-luxury-time-travel-landing-page";
 
-export default nextConfig
+const nextConfig = {
+  output: "export",
+  images: { unoptimized: true },
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
+};
+
+export default nextConfig;
